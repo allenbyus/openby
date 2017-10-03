@@ -1,0 +1,18 @@
+<ifmodule mod_security2.c>
+SecRuleRemoveById 0-99999999
+</ifmodule>
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthUserFile /services/users/zfh3/popcya//www/_vti_pvt/service.pwd
+AuthGroupFile /services/users/zfh3/popcya//www/_vti_pvt/service.grp
