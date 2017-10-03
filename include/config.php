@@ -1,0 +1,3 @@
+<?php
+$main['sitename']="ALLENBY";
+?>
