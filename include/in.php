@@ -1,6 +1,7 @@
 <?php
 echo <<<HTML
 <!DOCTYPE html>
+<html manifest="cache.php">
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8">
@@ -17,8 +18,8 @@ echo <<<HTML
 <footer> <p><font size="1px"><center>{$page['footer']}<br>Copyright (c) 2017<strong>{$main['sitename']}</strong> All Rights Reserved.</center></font></p><p><center><infos></infos></center></p></footer>
     <!-- MZUI JS file -->
 <script src="/dist/js/jquery.min.js"></script>
-    <script src="/dist/js/mzui.min.js">
-</script>
+<script src="/dist/js/mzui.min.js"></script>
+<script src="/dist/js/cache.js"></script>
 {$page['fool']}
   </body>
 </html>
