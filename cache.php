@@ -31,6 +31,7 @@ foreach ($files as $file)
 $body .= $file."\n";
 $body .="\nNETWORK:\n";
 $body.=<<<HTML
+*
 HTML;
 $body .="\n\nFALLBACK:\n";
 $body.=<<<HTML
