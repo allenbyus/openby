@@ -4,6 +4,7 @@ body{
 display: flex;
 min-height: 100vh;
 flex-direction: column;
+z-index: 1;
 }
 footer{
 display: flex;
