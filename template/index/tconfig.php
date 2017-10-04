@@ -1,6 +1,7 @@
 <?php
 $page['title']="主页";
 $page['fool']=<<<HTML
+<script type="text/javascript" src="/dist/js/offline.min.js"></script>
 <script type="text/javascript" src="/dist/js/cPlayer.min.js" id="cmScript"></script>
 <script type="text/javascript" src="/dist/js/demo.js"></script>
 HTML;
