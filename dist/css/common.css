@@ -3,3 +3,9 @@ display: flex;
 justify-content: center;
 align-items: buttom;
 }
+.contents{
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+z-index: 1;
+}
