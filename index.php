@@ -4,7 +4,7 @@ $ifloder="include";
 $tfloder="template";
 include("{$ifloder}/config.php");
 include("{$ifloder}/function.php");
-$ac=$_GET['action']?:$_POST[action];
+@$ac=$_GET['action']?:$_POST[action];
 if(!isset($ac)or$ac==""){
 $ac="index";
 }
