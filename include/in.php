@@ -13,9 +13,11 @@ echo <<<HTML
 {$page['tool']}
   </head>
   <body>
+  <div class="contents">
 HTML;
 include("./{$tfloder}/{$ac}/tindex.php");
 echo <<<HTML
+</div>
 <footer> <p><font size="1px"><center>{$page['footer']}<br>Copyright (c) 2017<strong>{$main['sitename']}</strong> All Rights Reserved.</center></font></p><p><center><infos></infos></center></p></footer>
     <!-- MZUI JS file -->
 <script src="/dist/js/jquery.min.js"></script>
