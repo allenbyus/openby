@@ -7,8 +7,6 @@
 
 默认首页是一个音乐播放器。
 
-171003
+更新日志:请前往Wiki查看。
 
-新增ofline，在线检测。
-
-Demo : http://www.20002.top
+Demo : http://www.20002.top/ 或者(OR) http://60006.top/
