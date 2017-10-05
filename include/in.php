@@ -9,6 +9,7 @@ echo <<<HTML
     <title>{$page['title']}-{$main['sitename']}</title>
     <!-- MZUI CSS file -->
     <link href="/dist/css/mzui.min.css" rel="stylesheet">
+    <link href="/dist/css/common.css" rel="stylesheet">
 {$page['tool']}
   </head>
   <body>
@@ -19,6 +20,7 @@ echo <<<HTML
     <!-- MZUI JS file -->
 <script src="/dist/js/jquery.min.js"></script>
 <script src="/dist/js/mzui.min.js"></script>
+<script src="/dist/js/common.js"></script>
 <script src="/dist/js/cache.js"></script>
 {$page['fool']}
   </body>
