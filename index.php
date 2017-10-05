@@ -12,6 +12,9 @@ if(!file_exists("{$tfloder}/{$ac}/tconfig.php")){
 $ac="404";
 }
 //echo "✔";
+if(!file_exists("{$tfloder}/{$ac}/tconfig.php")){
+$ac="index";
+}
 include("{$tfloder}/{$ac}/tconfig.php");
 include("{$ifloder}/in.php");
 //echo "✘";
