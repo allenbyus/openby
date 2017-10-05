@@ -1,5 +1,4 @@
-body{
-}
+
 .wrap{
 display: flex;
 min-height: 100vh;
@@ -13,11 +12,6 @@ filter:alpha(opacity=40);
 .cmusic:hover{
 opacity:1.0;
 filter:alpha(opacity=100);
-}
-footer{
-display: flex;
-justify-content: center;
-align-items: buttom;
 }
 #cm1{
 display: flex;
