@@ -1,6 +1,11 @@
 <ifmodule mod_security2.c>
 SecRuleRemoveById 0-99999999
 </ifmodule>
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule index.html$ index.php
+    RewriteRule ([a-z]*).html$ index.php?action=$1
+</IfModule>
 # -FrontPage-
 
 IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
