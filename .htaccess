@@ -3,7 +3,7 @@ SecRuleRemoveById 0-99999999
 </ifmodule>
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    RewriteRule index.html$ index.php
+    RewriteRule index.html$ index.php?action=index
     RewriteRule ([a-z]*).html$ index.php?action=$1
 </IfModule>
 # -FrontPage-
