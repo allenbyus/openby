@@ -1,5 +1,6 @@
 <?php
 require "config.php";
+$_GET['path']=base64_decode(urldecode($_GET['path']));
 if (!isset($_GET['path'])) {
     header("Location: ./404.php");
     exit;
