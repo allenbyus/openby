@@ -110,7 +110,7 @@ if (($data = $filesystem->getpath()) === false) {
             } else {
                 echo "<a href=\"./view.php?path=" . urlencode($tmp) . "\">查看</a>";
             }
-            echo "|<a href=\"./editor.php?path=" . urlencode($tmp) . "\">编辑</a>|<a href=\"./rename.php?path=" . urlencode($tmp) . "\">命名</a>|<a href=\"./autocp.php?path=" . urlencode($tmp) . "\">复件</a>|<a href=\"./autopk.php?path=" . urlencode($tmp) . "\">压缩</a>\n";
+            echo "|<a href=\"./editor.php?path=" . urlencode(base64_encode($tmp)) . "\">编辑</a>|<a href=\"./rename.php?path=" . urlencode($tmp) . "\">命名</a>|<a href=\"./autocp.php?path=" . urlencode($tmp) . "\">复件</a>|<a href=\"./autopk.php?path=" . urlencode($tmp) . "\">压缩</a>\n";
             if (is_link($tmp)) echo "<br />\n链接指向&ensp;:&ensp;" . readlink($tmp) . "\n";
             if ($finfo = $filesystem->getfinfo()) echo "\n<br />\n档案信息&ensp;:&ensp;$finfo\n";
             echo "</div>\n";
