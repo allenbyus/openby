@@ -102,8 +102,13 @@ if (($data = $filesystem->getpath()) === false) {
             echo "<br />\n";
     if($omime=___getmime($tmp, 'png:jpg:gif:jpeg')){
 echo '<img src="'.str_replace($ogdir,"",str_replace( '\\' , '/',$tmp)).'" width="120px">';
-}
 echo "<br />\n";
+}
+$acfile=new filesystem($tmp);
+if(($acfiles=$acfile->getpath($tmp))){
+echo "修改：".gmdate("Y-m-d H:i:s", ($acfiles['mtime'])+TIME)."<br />\n";
+echo "<br />";
+}
             echo "<a href=\"./dget.php?path=" . urlencode($tmp) . "\">下载</a>|";
             if ($mime = ___getmime($tmp, 'png:jpg:gif:bmp:zip')) {
                 if ($mime == 'application/zip') {
