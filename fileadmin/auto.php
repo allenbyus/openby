@@ -1,4 +1,5 @@
 <?php
+$ogdir=str_replace( '\\' , '/' , realpath(dirname(__FILE__).'/../'));
 if (basename($_SERVER['SCRIPT_NAME']) != "auto.php") {
     if (!file_exists("admin.php")) {
         if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2'])) {
