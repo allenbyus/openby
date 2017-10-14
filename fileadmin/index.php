@@ -100,6 +100,10 @@ if (($data = $filesystem->getpath()) === false) {
             echo ($perms = $filesystem->getperms()) == false ? "[????]" : "[$perms]";
             echo "<a href=\"./file.php?path=" . urlencode($tmp) . "\">" . ___basename($tmp) . "</a>（" . ___filesize($iget['size']) . "）\n";
             echo "<br />\n";
+    if($omime=___getmime($tmp, 'png:jpg:gif:jpeg')){
+echo '<img src="'.str_replace($ogdir,"",str_replace( '\\' , '/',$tmp)).'" width="120px">';
+}
+echo "<br />\n";
             echo "<a href=\"./dget.php?path=" . urlencode($tmp) . "\">下载</a>|";
             if ($mime = ___getmime($tmp, 'png:jpg:gif:bmp:zip')) {
                 if ($mime == 'application/zip') {
