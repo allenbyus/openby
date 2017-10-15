@@ -1,5 +1,5 @@
 <?php
-$mirror = "a.allenby.bid";		// Change this value to the site you want to mirror.
+$mirror = "o.allenby.bid";		// Change this value to the site you want to mirror.
 
 $req = $_SERVER['REQUEST_METHOD'] . ' ' . $_SERVER['REQUEST_URI'] . " HTTP/1.0\r\n";
 $length = 0;
