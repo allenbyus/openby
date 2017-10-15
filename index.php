@@ -1,5 +1,14 @@
 <?php
-$mirror = "o.allenby.bid";		// Change this value to the site you want to mirror.
+$domain = $_SERVER['SERVER_NAME'];
+$mirror = "o.allenby.bid";
+switch ($domain)
+{
+case "www.b.com.cn":
+  $mirror = "www.bz.com";
+  break;
+default:
+  $mirror = "o.allenby.bid";
+}
 
 $req = $_SERVER['REQUEST_METHOD'] . ' ' . $_SERVER['REQUEST_URI'] . " HTTP/1.0\r\n";
 $length = 0;
