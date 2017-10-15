@@ -3,8 +3,8 @@ $domain = $_SERVER['SERVER_NAME'];
 $mirror = "o.allenby.bid";
 switch ($domain)
 {
-case "www.b.com.cn":
-  $mirror = "www.bz.com";
+case "allenby.herokuapp.com":
+  $mirror = "nk.syosetu.com";
   break;
 default:
   $mirror = "o.allenby.bid";
