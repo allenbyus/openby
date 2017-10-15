@@ -1,4 +1,4 @@
-$(".fakeloader").fakeLoader({
+$("#fakeloader").fakeLoader({
                     timeToHide:1200,
                     bgColor:"#2ecc71",
                     spinner:"spinner1"
