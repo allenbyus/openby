@@ -76,7 +76,7 @@ let crearCanvasAjedrez = ()=>{
     }
   }
 }
-function vloader=() =>{
+window.onload =() =>{
 let contador =0;
 let intervalo = setInterval(()=>{
   crearCanvas();
@@ -89,5 +89,5 @@ let intervalo = setInterval(()=>{
      crearCanvasAjedrez()
   }
 },20);
+
 }
-addLoadListener(vloader);
