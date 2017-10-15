@@ -1,9 +1,6 @@
 <?php
 echo <<<HTML
-<div id="clock">
-    <p class="date">{{ date }}</p>
-    <p class="time">{{ time }}</p>
-</div>
-
+<<h6 id="contador">0</h6>
+  <canvas id="canvas" class="canva"></canvas>
 HTML;
 ?>
