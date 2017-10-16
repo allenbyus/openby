@@ -89,7 +89,7 @@ if (!isset($_GET['path'])) {
     }
     echo "<div class=\"like\">爱特文本编辑工具</div>\n";
     echo "<div class=\"love\">\n";
-    echo "<form action=\"?path=" . urlencode($path) . "&charset={$charset}\" method=\"POST\">\n";
+    echo "<form action=\"?path=" . urlencode(base64_encode($path)) . "&charset={$charset}\" method=\"POST\">\n";
     echo "<input type=\"submit\" value=\"保存文件\" />\n";
     echo "<input type=\"reset\" value=\"重置文件\" />\n<br />\n";
     if (isset($_GET['charset'])) if ($charset != "") {
