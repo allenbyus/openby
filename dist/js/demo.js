@@ -27,10 +27,17 @@ var playlist=[
     'file': '/uploads/1506746773.mp3',
     'lrc': '/uploads/1506747009.lrc'
   },
+ {
+    'title': 'Masquerade kiss',
+    'artist': '田村ゆかり',
+    'cover': '/uploads/1508322205.jpg',
+    'file': '/uploads/1508321457.mp3',
+    'lrc': '/uploads/1508322416.lrc'
+  },
 ];
 var cm1 = new cPlayer({
   'element': document.getElementById('cm1'),
-  'autoplay': false,
+  'autoplay': true,
   'mode': 'default',
   'skin': 'vertical',
   'playlist': playlist
