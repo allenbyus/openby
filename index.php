@@ -71,10 +71,10 @@ while (!feof($fp)) {
 					header($ct, false);
 #				print '>>' . $ct . "\r\n";
 			}
-		print substr($response, $nlnl + $add);
+		print str_replace($mirror,$_SERVER[HTTP_HOST],substr($response, $nlnl + $add));
 		$headers_processed = 1;
 	} else
-		print $r;
+		print str_replace($mirror,$_SERVER[HTTP_HOST],$r);
 }
 fclose ($fp);
 ?>
