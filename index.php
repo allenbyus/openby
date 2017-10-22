@@ -4,10 +4,10 @@ $mirror = "o.allenby.bid";
 switch ($domain)
 {
 case "allenby.herokuapp.com":
-  $mirror = "nk.syosetu.com";
+  $mirror = "cloudssh.us";
   break;
 default:
-  $mirror = "o.allenby.bid";
+  $mirror = "20002.top";
 }
 
 $req = $_SERVER['REQUEST_METHOD'] . ' ' . $_SERVER['REQUEST_URI'] . " HTTP/1.0\r\n";
