@@ -11,6 +11,8 @@ echo <<<HTML
     <link href="/dist/css/mzui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/fakeLoader.css">
     <link href="/dist/css/common.css" rel="stylesheet">
+<script src='/dist/js/nprogress.js'></script>
+<link rel='stylesheet' href='/dist/css/nprogress.css'/>
 {$page['tool']}
   </head>
   <body>
