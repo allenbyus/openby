@@ -29,7 +29,7 @@ var playlist=[
     'title': 'only my railgun (3D)',
     'artist': 'fripSide',
     'cover': upre+'/uploads/1506256002.jpg',
-    'file': upre+'/uploads/1510153113.mp3',
+    'file': upre+'/uploads/1510182218.mp3',
     'lrc': upre+'/uploads/1506745992.lrc'
   },
 {
