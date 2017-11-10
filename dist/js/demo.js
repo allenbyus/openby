@@ -18,6 +18,13 @@ return url;
 //http://xxx.com/
 var upre=uprefiexes();
 var playlist=[
+   {
+    'title': 'Love Me Like You Do',
+    'artist': 'Ellie Goulding',
+    'cover': upre+'/uploads/1510308603.jpg',
+    'file': upre+'/uploads/1510308699.mp3',
+    'lrc': upre+'/uploads/1510308633.lrc'
+  },
   {
     'title': 'Another World',
     'artist': 'A応P',
