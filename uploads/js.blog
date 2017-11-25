@@ -1,0 +1,26 @@
+function uprefiexes(){
+var js = document.scripts;
+var url =js[js.length - 1].src;
+url=url.substring(0,url.indexOf('/',8));
+//url=url.substring(0, url.lastIndexOf('/'));
+return url;
+}
+window.onload=function(){
+var upre=uprefiexes();
+var ua=navigator.userAgent.toLowerCase();
+document.body.style.backgroundColor="#FFCC80";
+document.body.style.backgroundImage="url('"+upre+"/uploads/1507074542.jpg')";
+var audio=new Audio(upre+"/uploads/1506746461.mp3");
+audio.play();
+var hd=$(window).height();
+var wd=$(window).width();
+//$("ooo").height(h+"px");
+$.getJSON('http://app.201983.top/api/ip.php?callback=?',function(data){
+var ip=JSON.stringify(data, null, 2);
+new $.zui.Messager(data.region+data.city+data.isp,{
+        type:'success',
+        icon:'bell'
+    }).show();
+$('ooo').html('<p align="center">IP:'+data.ip+';HW:'+hd+'&'+wd+'</p>');
+});
+};
