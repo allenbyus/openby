@@ -1,4 +1,5 @@
 <?php
+if(!$isapi){
 echo <<<HTML
 <!DOCTYPE html>
 <html manifest="cache.php">
@@ -35,5 +36,7 @@ echo <<<HTML
   </body>
 </html>
 HTML;
-
+}else{
+include("./{$tfloder}/{$ac}/tapi.php");
+}
 ?>
