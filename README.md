@@ -9,4 +9,4 @@
 
 更新日志:请前往Wiki查看。
 
-Demo : http://www.20002.top/ 或者(OR) http://60006.top/
+Demo : http://openby.herokuapp.com/
